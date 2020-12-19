@@ -13,7 +13,7 @@ V 0.3
 #define led_G 10
 #define led_B 11
 
-#include "Easyino.h"
+#include "alpha.h"
 #include "Arduino.h"
 #include <EEPROM.h>
 #include <SPI.h>
