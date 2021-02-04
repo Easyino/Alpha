@@ -8,9 +8,6 @@
 V 0.3
 */
 
-#ifndef Easyino_h
-#define Easyino_h
-
 #include <SPI.h>
 
 		//mapping dei pin della scheda
