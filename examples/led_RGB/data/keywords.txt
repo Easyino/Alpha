@@ -1,0 +1,73 @@
+#######################################
+# Syntax Coloring Map about Easyino library
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+####################################### 
+	
+Easy	KEYWORD1
+Easyino	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+aspetta	KEYWORD2
+accendi	KEYWORD2
+ascolta	KEYWORD2
+suona	KEYWORD2
+registraLuce	KEYWORD2
+livelloLuce	KEYWORD2
+suonaMelodia	KEYWORD2
+calibraMicrofono	KEYWORD2
+controllaPulsanti	KEYWORD2
+#   per i robottini
+
+vaiAvanti	KEYWORD2
+giraDestra	KEYWORD2
+giraSinistra	KEYWORD2
+leggiCodice	KEYWORD2
+accendiFanali	KEYWORD2
+spegniFanali	KEYWORD2
+accendiFrecciaDestra	KEYWORD2
+spegniFrecciaDestra	KEYWORD2
+######################################
+# Constants (LITERAL1)
+#######################################
+
+#elenco schede
+Alfa	LITERAL1
+Beta	LITERAL1
+Luigi	LITERAL1
+Catia	LITERAL1
+Robot	LITERAL1
+
+# elenco pin
+D1	LITERAL1
+D2	LITERAL1
+D3	LITERAL1
+D4	LITERAL1
+buzz	LITERAL1
+microfono	LITERAL1
+fotoresistenza	LITERAL1
+
+#elenco note
+DO	LITERAL1
+RE	LITERAL1
+MI	LITERAL1
+FA	LITERAL1
+SOL	LITERAL1
+LA	LITERAL1
+SI	LITERAL1
+PAUSA	LITERAL1
+
+#supporto
+livello_luce_salvato	LITERAL1
+
+P1Premuto	LITERAL1
+P2Premuto	LITERAL1
+P3Premuto	LITERAL1
+P4Premuto	LITERAL1
+
+codice_tessera	LITERAL1

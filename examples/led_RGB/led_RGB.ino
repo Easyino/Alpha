@@ -12,7 +12,7 @@
     
 */
 
-#include <Easyino.h>  //includiamo la libreria Easyino.h
+#include "alpha.h"  //includiamo la libreria Easyino.h
 Easy scheda(true);    //nominiamo scheda la nostra scheda "Easyino-Education"
 
 int tempo = 1000; //la variabile tempo contiene il valore -1000-
