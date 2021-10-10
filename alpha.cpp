@@ -30,6 +30,8 @@ Easy::Easy(int sc) {
   pinMode(led_B, OUTPUT);
   pinMode(8, INPUT_PULLUP);
   pinMode(12, INPUT_PULLUP);
+  pinMode(A4, INPUT_PULLUP);
+  pinMode(A5, INPUT_PULLUP);
 }
 
 void Easy::aspetta( int d)
@@ -116,8 +118,8 @@ void Easy::suonaMelodia(int note[100], int durate[100]) {
 
 bool P1Premuto, P2Premuto, P3Premuto, P4Premuto;
 void Easy::controllaPulsanti() {
-  P3Premuto = !analogRead(A4);
-  P1Premuto = !analogRead(A5);
+  P3Premuto = analogRead(A4)<500;
+  P1Premuto = analogRead(A5)<500;
   P4Premuto = !digitalRead(8);
   P2Premuto = !digitalRead(12);
 }
