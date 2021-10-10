@@ -130,14 +130,8 @@ void Easy::suonaMelodia(char* note[100], int durate[100]) {
 
 bool P1Premuto, P2Premuto, P3Premuto, P4Premuto;
 void Easy::controllaPulsanti() {
-  if (analogRead(A4) == 0)P3Premuto = true;
-  else {
-    P3Premuto = false;             //p3
-    if (analogRead(A5) == 0)P1Premuto = true;
-    else P1Premuto = false;           //p1
-  }
-  if (!digitalRead(8))P4Premuto = true;   //p4
-  else P4Premuto = false;
-  if (!digitalRead(12))P2Premuto = true;
-  else P2Premuto = false;                   //p2
+  P3Premuto = !analogRead(A4);
+  P1Premuto = !analogRead(A5);
+  P4Premuto = !digitalRead(8);
+  P2Premuto = !digitalRead(12);
 }
