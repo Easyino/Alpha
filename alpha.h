@@ -10,18 +10,18 @@ V 0.3
 
 #include <SPI.h>
 
-		//mapping dei pin della scheda
+//mapping dei pin della scheda
 #define D1 7
 #define D2 4
 #define D3 3
 #define D4 2
-#define led_R 9
+#define led_R 11
 #define led_G 10
-#define led_B 11
+#define led_B 9
 #define microfono A2
 #define fotoresistenza A3
 #define buzz 3
-		//note
+//note
 #define DO  523
 #define RE  587
 #define MI  659
@@ -30,7 +30,13 @@ V 0.3
 #define LA  880
 #define SI  988
 #define PAUSA 1
-
+//colori
+#define ROSSO 1 
+#define VERDE 2
+#define BLU 3 
+#define GIALLO 4
+#define ROSA 5
+#define ROSA 6
 
 		//schede Easyino
 #define Alfa 0
@@ -43,7 +49,7 @@ void aspetta(int d);
 void boot();
 
 void accendi( int r, int g, int b);
-void accendi(char* colore);
+void accendi(byte colore);
 
 bool ascolta();
 void calibraMicrofono(int so);

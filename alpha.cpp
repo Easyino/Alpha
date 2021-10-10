@@ -8,10 +8,7 @@
   Manteined by Federico Longhin & Mattia Pilotto.
   V 0.3
 */
-//generale
-#define led_R 9
-#define led_G 10
-#define led_B 11
+
 
 #include "alpha.h"
 #include "Arduino.h"
@@ -56,21 +53,18 @@ void Easy::accendi( int r, int g, int b)
   analogWrite(led_B, b);
 }
 
-void Easy::accendi(char* colore)
+void Easy::accendi(byte colore)
 {
 #define n_colori 6 //ci sono 3 colori salvati
-  char* lista_colori[] = {"ROSSO", "VERDE", "BLU", "GIALLO", "BIANCO", "ROSA"};
-  int ton_rosso[] = {255, 0, 0, 255, 255, 255};
-  int ton_giallo[] = {0, 255, 0, 255, 255, 0};
-  int ton_blu[] = {0, 0, 255, 0, 255, 255};
-  for (int c = 0; c < n_colori; c++) {
-    if (colore == lista_colori[c]) {
-      Serial.println(lista_colori[c]);
-      analogWrite(led_R, ton_rosso[c]);
-      analogWrite(led_G, ton_giallo[c]);
-      analogWrite(led_B, ton_blu[c]);
-    }
-  }
+ // char* lista_colori[] = {"ROSSO", "VERDE", "BLU", "GIALLO", "BIANCO", "ROSA"};
+  int ton_rosso[] = {0,255, 0, 0, 255, 255, 255};
+  int ton_giallo[] = {0,0, 255, 0, 255, 255, 0};
+  int ton_blu[] = {0, 0,0, 255, 0, 255, 255};
+
+      analogWrite(led_R, ton_rosso[colore]);
+      analogWrite(led_G, ton_giallo[colore]);
+      analogWrite(led_B, ton_blu[colore]);
+
 }
 
 //microfono
