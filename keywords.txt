@@ -1,5 +1,5 @@
 #######################################
-# Syntax Coloring Map about Easyino library
+# Syntax Coloring Map about Easyino Aplha library
 #######################################
 
 #######################################
@@ -22,16 +22,7 @@ livelloLuce	KEYWORD2
 suonaMelodia	KEYWORD2
 calibraMicrofono	KEYWORD2
 controllaPulsanti	KEYWORD2
-#   per i robottini
 
-vaiAvanti	KEYWORD2
-giraDestra	KEYWORD2
-giraSinistra	KEYWORD2
-leggiCodice	KEYWORD2
-accendiFanali	KEYWORD2
-spegniFanali	KEYWORD2
-accendiFrecciaDestra	KEYWORD2
-spegniFrecciaDestra	KEYWORD2
 ######################################
 # Constants (LITERAL1)
 #######################################
@@ -61,6 +52,14 @@ SOL	LITERAL1
 LA	LITERAL1
 SI	LITERAL1
 PAUSA	LITERAL1
+
+#elenco colori
+ROSSO	LITERAL1
+VERDE	LITERAL1
+BLU	LITERAL1
+GIALLO	LITERAL1
+BIANCO	LITERAL1
+ROSA	LITERAL1
 
 #supporto
 livello_luce_salvato	LITERAL1
