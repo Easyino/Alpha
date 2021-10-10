@@ -13,9 +13,7 @@ Easy alpha(Alpha);    //nominiamo scheda la nostra scheda "alpha", e le diamo le
 
 
 
-void setup() {
-    Serial.begin(115200);
-}  
+void setup() {} 
 
 void loop()
 {
