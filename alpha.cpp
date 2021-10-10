@@ -59,7 +59,7 @@ void Easy::accendi( int r, int g, int b)
 void Easy::accendi(char* colore)
 {
 #define n_colori 6 //ci sono 3 colori salvati
-  char* lista_colori[] = {"rosso", "verde", "blu", "giallo", "bianco", "rosa"};
+  char* lista_colori[] = {"ROSSO", "VERDE", "BLU", "GIALLO", "BIANCO", "ROSA"};
   int ton_rosso[] = {255, 0, 0, 255, 255, 255};
   int ton_giallo[] = {0, 255, 0, 255, 255, 0};
   int ton_blu[] = {0, 0, 255, 0, 255, 255};
