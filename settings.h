@@ -1,0 +1,1 @@
+int soglia_microfono = 86;

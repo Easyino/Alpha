@@ -12,9 +12,10 @@
 
 #include "alpha.h"
 #include "Arduino.h"
+#include "settings.h"
 #include <EEPROM.h>
 #include <SPI.h>
-int soglia_microfono = 105;
+
 
 int modello_scheda = 0;
 
