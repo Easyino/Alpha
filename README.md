@@ -82,13 +82,13 @@ I nostri sviluppatori hanno lavorato ad una libreria ricca di funzioni semplific
 	```
 - `suonaMelodia();` 
 
-	è una variante di `suona()`, nella quale però si possono suonare melodie. le note e durate devono essere fornite alle funzione come array di caratteri e interi, nel dubbio copia l'esempio seguente.
+	è una variante di `suona()`, nella quale però si possono suonare melodie. le note e durate devono essere fornite alle funzione come array di interi, nel dubbio copia l'esempio seguente.
 
 	```
-	char* note[7] = {DO, RE, MI, FA, SOL, LA, SI};	//creo l'array di note
+	int note[7] = {DO, RE, MI, FA, SOL, LA, SI};	//creo l'array di note
  	int durate[7] = {100,200,300,400,500,600,700};	//creo l'array di durate
 
-	suona(note, durate);		//suono la melodia.
+	suonaMelodia(note, durate);		//suono la melodia.
 	```
 	>Per inserire una pausa nella Melodia scrivi `PAUSA` al posto di una nota, e assegnaci la relativa durata.
 	
