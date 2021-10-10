@@ -93,31 +93,22 @@ int Easy::livelloLuce() {
 }
 
 //buzz
-#define DO  523
-#define RE  587
-#define MI  659
-#define FA  698
-#define SOL  784
-#define LA  880
-#define SI  988
-#define PAUSA 1
 
-void Easy::suona(char* nota, int durata) {
+
+void Easy::suona(int nota, int durata) {
   if (nota != "PAUSA") {
     tone(buzz, nota, durata);
   }
 }
 
-void Easy::suonaMelodia(char* note[100], int durate[100]) {
+void Easy::suonaMelodia(int note[100], int durate[100]) {
   int k;
   for ( k = 0; note[k] != 0; k++) {}
 
-  Serial.println(k);
   for (int d = 0; d < k; d++) {
     if (note[d] != PAUSA) {
-      tone(3, note[d], durate[d]);
+      tone(buzz, note[d], durate[d]);
     }
-
     delay(durate[d]);
   }
 }

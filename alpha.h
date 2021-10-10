@@ -58,8 +58,8 @@ void registraLuce();
 int livelloLuce();
 int livello_luce_salvato;
 
-void suona(char* nota, int durata);
-void suonaMelodia(char* note[100],int durate[100]);
+void suona(int nota, int durata);
+void suonaMelodia(int note[100],int durate[100]);
 
 void controllaPulsanti();
 
