@@ -39,7 +39,7 @@ V 0.3
 #define ROSA 6
 
 		//schede Easyino
-#define Alfa 0
+#define Alpha 0
 
 class Easy
 {
